@@ -17,3 +17,12 @@ De esta manera, se busca fomentar la **solidaridad académica y la construcción
 - Ofrecer una herramienta digital gratuita, intuitiva y escalable.
 
 ---
+
+## 🔧 Funcionalidades Iniciales
+
+- Registro e inicio de sesión de usuarios.
+- Subida y visualización de materiales académicos.
+- Búsqueda avanzada y filtros por categorías, materia o institución.
+- Interacción comunitaria mediante **comentarios y valoraciones**.
+
+---
