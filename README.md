@@ -26,3 +26,11 @@ De esta manera, se busca fomentar la **solidaridad académica y la construcción
 - Interacción comunitaria mediante **comentarios y valoraciones**.
 
 ---
+
+## 🌱 Futuras Funcionalidades
+
+- Integración con bibliotecas públicas y comunitarias.
+- Espacios de tutorías colaborativas y foros de estudio.
+- Aplicación móvil para ampliar el acceso y la usabilidad.
+
+---
