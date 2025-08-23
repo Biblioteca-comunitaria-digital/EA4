@@ -34,3 +34,11 @@ De esta manera, se busca fomentar la **solidaridad académica y la construcción
 - Aplicación móvil para ampliar el acceso y la usabilidad.
 
 ---
+
+## 👥 Usuarios Destinatarios
+
+- **Estudiantes** de nivel secundario, terciario y universitario.
+- **Docentes y formadores** que deseen compartir o recomendar materiales.
+- **Investigadores y autodidactas** en busca de recursos abiertos.
+
+---
