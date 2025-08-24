@@ -42,3 +42,11 @@ De esta manera, se busca fomentar la **solidaridad académica y la construcción
 - **Investigadores y autodidactas** en busca de recursos abiertos.
 
 ---
+
+## 🏛️ Posibles Clientes e Instituciones Aliadas
+
+- Universidades, colegios y terciarios.
+- ONGs enfocadas en educación.
+- Bibliotecas públicas y comunitarias interesadas en digitalización y trueque solidario.
+
+---
