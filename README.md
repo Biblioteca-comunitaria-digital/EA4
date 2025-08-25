@@ -50,3 +50,22 @@ De esta manera, se busca fomentar la **solidaridad académica y la construcción
 - Bibliotecas públicas y comunitarias interesadas en digitalización y trueque solidario.
 
 ---
+
+## ⚙️ Tecnologías Previstas
+
+- **Frontend:** React, Bootstrap.
+- **Backend:** Node.js, Express.
+- **Base de datos:** MongoDB.
+- **Control de versiones:** Git / GitHub.
+
+---
+
+## 👨‍💻 Equipo de Desarrollo
+
+- **Juan Pablo Ramallo** – Full Stack Developer
+- **Pablo Valentín Sosa Luque** – Full Stack (HTML, CSS, JavaScript, React, Bootstrap)
+- **Lucía Abigail Chavez Sosa** – Full Stack (HTML, CSS, JavaScript, React, Bootstrap)
+- **Cristian Felipe Pasquevich** - Principiante
+- **Leandro Manuel Quiroga Perez** 
+
+---
