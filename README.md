@@ -65,7 +65,7 @@ De esta manera, se busca fomentar la **solidaridad académica y la construcción
 - **Juan Pablo Ramallo** – Full Stack Developer
 - **Pablo Valentín Sosa Luque** – Full Stack (HTML, CSS, JavaScript, React, Bootstrap)
 - **Lucía Abigail Chavez Sosa** – Full Stack (HTML, CSS, JavaScript, React, Bootstrap)
-- **Cristian Felipe Pasquevich** - Principiante
-- **Leandro Manuel Quiroga Perez** 
+- **Cristian Felipe Pasquevich** - Conocimientos básicos
+- **Leandro Manuel Quiroga Perez** - Conocimientos básicos
 
 ---
