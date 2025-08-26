@@ -23,6 +23,7 @@ De esta manera, se busca fomentar la **solidaridad académica y la construcción
 - Registro e inicio de sesión de usuarios.
 - Subida y visualización de materiales académicos.
 - Búsqueda avanzada y filtros por categorías, materia o institución.
+- Descarga de material.
 - Interacción comunitaria mediante **comentarios y valoraciones**.
 
 ---
@@ -32,6 +33,28 @@ De esta manera, se busca fomentar la **solidaridad académica y la construcción
 - Integración con bibliotecas públicas y comunitarias.
 - Espacios de tutorías colaborativas y foros de estudio.
 - Aplicación móvil para ampliar el acceso y la usabilidad.
+
+---
+
+## 💳 Modelos de Acceso y Suscripción
+
+La plataforma contará con dos modalidades de uso:
+
+### ✅ Versión Gratuita
+
+- Acceso a **todo el catálogo de materiales** para lectura online.
+- Posibilidad de **descargar hasta 3 archivos semanales**.
+- En caso de agotar las descargas, el usuario podrá adquirir **descargas individuales** a bajo costo.
+
+### ⭐ Versión Premium (Suscripción Paga)
+
+- **Descargas ilimitadas** de materiales.
+- Acceso a **beneficios decorativos de perfil** (badges, insignias, temas visuales) que otorgarán identidad propia a cada usuario.
+- **Mayor visibilidad y prioridad en las valoraciones**, para destacar publicaciones de quienes aportan más a la comunidad.
+
+💡 Todos los costos serán **muy accesibles** y se habilitarán **todos los métodos de pago posibles**, garantizando que cualquier estudiante, sin importar su situación, pueda acceder al servicio.
+
+Este esquema busca un equilibrio entre la **inclusión** (con una base gratuita robusta) y la **sostenibilidad del proyecto** mediante pequeñas contribuciones de los usuarios que deseen más beneficios.
 
 ---
 
@@ -50,3 +73,27 @@ De esta manera, se busca fomentar la **solidaridad académica y la construcción
 - Bibliotecas públicas y comunitarias interesadas en digitalización y trueque solidario.
 
 ---
+
+## ⚙️ Tecnologías Previstas
+
+- **Frontend:** HTML, CSS, frameworks a confirmar.
+- **Backend:** Python.
+- **Base de datos:** MySQL
+- **Control de versiones:** Git / GitHub.
+
+---
+
+## 👨‍💻 Equipo de Desarrollo
+
+- **Juan Pablo Ramallo** – Full Stack Developer
+- **Pablo Valentín Sosa Luque** – Full Stack (HTML, CSS, JavaScript, React, Bootstrap)
+- **Lucía Abigail Chavez Sosa** – Full Stack (HTML, CSS, JavaScript, React, Bootstrap)
+- **Cristian Felipe Pasquevich** - Conocimientos básicos
+- **Leandro Manuel Quiroga Perez** - Conocimientos básicos
+- **Alejandro David Garcia Pardo** - Full Stack Developer
+
+---
+
+## 🗒️ Notas
+
+- El compañero **Alejandro David Garcia Pardo** se unió al equipo de desarrollo el dia 25/08/2025.
