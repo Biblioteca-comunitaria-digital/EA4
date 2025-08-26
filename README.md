@@ -76,6 +76,7 @@ Este esquema busca un equilibrio entre la **inclusión** (con una base gratuita 
 
 ## ⚙️ Tecnologías Previstas
 
+
 - **Frontend:** HTML, CSS, frameworks a confirmar.
 - **Backend:** Python.
 - **Base de datos:** MySQL
