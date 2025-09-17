@@ -4,26 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
-        <h2>Biblioteca digital comunitaria</h2>
-        <label for="Usuario">Usuario</label>
-        <input id="Usuario" name="Nombre de usuario" placeholder="Coloque el usuario"><br>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="index.html"
+          >📚 Biblioteca Comunitaria Digital</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <label for="contraseña">Contraseña</label>
-        <input id="contraseña" type="password"  name="contraseña del usuario" placeholder="Coloque la contraseña">
-
-        <div>
-            <input type="checkbox"/>
-            <label>Recordar contraseña</label><br><br>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="suscripcion.html">Suscripción</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="subir_material.html">Subir Material</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inicio.html">Materiales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="buscar.html">Buscar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html">Registro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="inicio_sesion.html">Iniciar Sesión</a>
+            </li>
+          </ul>
         </div>
-        
+      </div>
+    </nav>
+    <section class="d-flex align-items-center justify-content-center vh-100 bg-light">
+        <div class="card shadow p-4" style="max-width: 400px; width: 100%;">
+            <h2 class="text-center mb-4">Iniciar Sesión</h2>
+            <form>
+                <div class="mb-3">
+                    <label type="text" class="form-label" for="Usuario">Usuario</label>
+                    <input class="form-control" id="Usuario" name="Nombre de usuario" placeholder="Igrese nombre de usuario"><br>
+                <div class="mb-3">
+                    <label class="form-label" for="contraseña">Contraseña</label>
+                    <input class="form-control" id="contraseña" type="password"  name="contraseña del usuario" placeholder="Igrese contraseña">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="recordarme"/>
+                    <label class="form-check-label">Recordarme</label><br><br>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Iniciar sesión">
+            </form>
+        </div>
+    </section>
 
-        <br>
-        <input type="submit" class="btn-1" value="Iniciar sesión">
-    </form>
-    
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">
+        © 2025 Biblioteca Comunitaria Digital - Proyecto abierto y colaborativo
+      </p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
