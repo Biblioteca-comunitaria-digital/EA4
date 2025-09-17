@@ -97,3 +97,4 @@ Este esquema busca un equilibrio entre la **inclusión** (con una base gratuita 
 ## 🗒️ Notas
 
 - El compañero **Alejandro David Garcia Pardo** se unió al equipo de desarrollo el dia 25/08/2025.
+- El compañero **Leandro Manuel Quiroga Perez** participo en la realización del sprint 1, sin embargo se le presentaron graves inconvenientes personales como resultado de esto no pudo realizar commits.
