@@ -93,7 +93,3 @@ Este esquema busca un equilibrio entre la **inclusión** (con una base gratuita 
 - **Alejandro David Garcia Pardo** - Full Stack Developer
 
 ---
-
-## 🗒️ Notas
-
-- El compañero **Alejandro David Garcia Pardo** se unió al equipo de desarrollo el dia 25/08/2025.
