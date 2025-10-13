@@ -93,4 +93,3 @@ Este esquema busca un equilibrio entre la **inclusión** (con una base gratuita 
 - **Alejandro David Garcia Pardo** - Full Stack Developer
 
 ---
-
