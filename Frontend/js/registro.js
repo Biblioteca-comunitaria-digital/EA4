@@ -5,7 +5,18 @@ form.addEventListener("submit", function(event) {
 
     const contraseña = document.getElementById("contraseña").value;
     const reingreso = document.getElementById("reingreso").value;
-
+    const mensaje = document.getElementById("mensaje");
+    
     if (contraseña === reingreso) { 
-        window.location.href = 'inicio_sesion.html';}
-})
+        mensaje.textContent = "✅ Registro exitoso. Redirigiendo al inicio de sesión...";
+        mensaje.style.color = "green";
+
+        setTimeout(() => {
+            window.location.href = "inicio_sesion.html";
+        }, 2000);
+
+    } else {
+        mensaje.textContent = "⚠️ Las contraseñas no coinciden. Intente nuevamente.";
+        mensaje.style.color = "red";
+    }
+});
