@@ -33,7 +33,7 @@ WHERE
 -- UPDATE: Cambiar el rol de un usuario a 'admin' (rol 1)
 UPDATE usuarios
 SET id_rol = 1
-WHERE id_usuario = 1; -- Asumiendo que juanperez tiene id_usuario 1
+WHERE id_usuario = 1; 
 
 -- DELETE: Eliminar un usuario por su id
 DELETE FROM usuarios
