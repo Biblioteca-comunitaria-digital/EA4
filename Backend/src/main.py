@@ -194,7 +194,78 @@ class Application:
             print("ID no válido. Debe ser un número.")
         input("\nPresione Enter para volver...")
     
-#  ESPERANDO CRUD DE PRODUCTOS ---------
+#  CRUD PRODUCTOS
+    def accion_admin_crear_producto(self):
+        limpiar_consola()
+        print("--- Crear Nuevo Producto ---")
+        nombre = input("Nombre del producto: ")
+        descripcion = input("Descripción: ")
+        try:
+            precio = float(input("Precio: "))
+            if precio <= 0:
+                print("El precio debe ser mayor a 0.")
+                input("\nPresione Enter para volver...")
+                return
+        except ValueError:
+            print("Precio inválido. Debe ser un número.")
+            input("\nPresione Enter para volver...")
+            return
+
+        exito, mensaje = self.product_manager.crear_producto(nombre, descripcion, precio, self.usuario_actual.id_usuario)
+        print(mensaje)
+        input("\nPresione Enter para volver...")
+
+    def accion_admin_listar_productos(self):
+        productos = self.product_manager.listar_productos()
+        print("\n--- Listado de Productos ---")
+        print("{:<5} {:<30} {:<50} {:<10}".format("ID", "Nombre", "Descripción", "Precio"))
+        print("-" * 100)
+        for prod in productos:
+            print("{:<5} {:<30} {:<50} {:<10}".format(prod['id_producto'], prod['nombre'], prod['descripcion'][:47] + "...", f"${prod['precio']}"))
+        input("\nPresione Enter para volver...")
+
+    def accion_admin_listar_productos_join(self):
+        """NUEVO: Listado con JOIN - Cumple requerimiento de consulta con JOIN."""
+        productos = self.product_manager.listar_productos_con_join()
+        print("\n--- Listado de Productos con Creador (JOIN) ---")
+        print("{:<5} {:<30} {:<50} {:<10} {:<20}".format("ID", "Nombre", "Descripción", "Precio", "Creador"))
+        print("-" * 120)
+        for prod in productos:
+            print("{:<5} {:<30} {:<50} {:<10} {:<20}".format(
+                prod['id_producto'], 
+                prod['nombre'], 
+                prod['descripcion'][:47] + "...", 
+                f"${prod['precio']}", 
+                prod['creador']
+            ))
+        input("\nPressione Enter para volver...")
+
+    def accion_admin_actualizar_producto(self):
+        try:
+            id_producto = int(input("Ingrese el ID del producto a actualizar: "))
+            nombre = input("Nuevo nombre: ")
+            descripcion = input("Nueva descripción: ")
+            precio = float(input("Nuevo precio: "))
+            if self.product_manager.actualizar_producto(id_producto, nombre, descripcion, precio):
+                print("Producto actualizado exitosamente.")
+            else:
+                print("No se pudo actualizar el producto. Verifique el ID.")
+        except ValueError:
+            print("ID o precio inválido. Debe ser un número.")
+        input("\nPresione Enter para volver...")
+
+    def accion_admin_eliminar_producto(self):
+        try:
+            id_producto = int(input("Ingrese el ID del producto a eliminar: "))
+            confirmacion = input(f"¿Está seguro que desea eliminar el producto con ID {id_producto}? (s/n): ").lower()
+            if confirmacion == 's':
+                if self.product_manager.eliminar_producto(id_producto):
+                    print("Producto eliminado exitosamente.")
+                else:
+                    print("No se pudo eliminar el producto.")
+        except ValueError:
+            print("ID no válido. Debe ser un número.")
+        input("\nPresione Enter para volver...")
 
     def run(self):
         self.inicializar_bd()
