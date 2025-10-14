@@ -2,6 +2,7 @@ import stdiomask
 from .database.database_manager import DatabaseManager
 from .modulo1.services import UserManager
 from .modulo1.models import Usuario
+from .modulo1.product_manager import ProductManager  
 from .utils import limpiar_consola, validar_contraseña
 
 # --- CONFIGURACIÓN DE LA BASE DE DATOS MYSQL ---
@@ -19,6 +20,7 @@ class Application:
     def __init__(self):
         self.db_manager = DatabaseManager(DB_CONFIG)
         self.user_manager = UserManager(self.db_manager)
+        self.product_manager = ProductManager(self.db_manager) 
         self.usuario_actual: Usuario | None = None
 
     def inicializar_bd(self):
@@ -38,7 +40,7 @@ class Application:
 
     def mostrar_menu_principal(self):
         limpiar_consola()
-        print("===== BIENVENIDO AL SISTEMA DE GESTIÓN DE USUARIOS =====")
+        print("===== BIENVENIDO AL SISTEMA DE GESTIÓN DE USUARIOS Y PRODUCTOS =====")
         print("1. Iniciar Sesión")
         print("2. Registrarse")
         print("3. Salir")
@@ -114,7 +116,7 @@ class Application:
             else:
                 print("Opción no válida.")
                 input("\nPresione Enter para continuar...")
-                
+
     def menu_admin(self):
         while True:
             limpiar_consola()
@@ -122,7 +124,12 @@ class Application:
             print("1. Ver listado de usuarios")
             print("2. Cambiar rol de un usuario")
             print("3. Eliminar un usuario")
-            print("4. Cerrar Sesión")
+            print("4. Crear Producto")  # NUEVO
+            print("5. Listar Productos")  # NUEVO
+            print("6. Listar Productos con Creador (JOIN)")  # NUEVO
+            print("7. Actualizar Producto")  # NUEVO
+            print("8. Eliminar Producto")  # NUEVO
+            print("9. Cerrar Sesión")
             opcion = input("Seleccione una opción: ")
 
             if opcion == '1':
@@ -131,7 +138,17 @@ class Application:
                 self.accion_admin_cambiar_rol()
             elif opcion == '3':
                 self.accion_admin_eliminar_usuario()
-            elif opcion == '4':
+            elif opcion == '4':  # NUEVO
+                self.accion_admin_crear_producto()
+            elif opcion == '5':  # NUEVO
+                self.accion_admin_listar_productos()
+            elif opcion == '6':  # NUEVO
+                self.accion_admin_listar_productos_join()
+            elif opcion == '7':  # NUEVO
+                self.accion_admin_actualizar_producto()
+            elif opcion == '8':  # NUEVO
+                self.accion_admin_eliminar_producto()
+            elif opcion == '9':
                 print("Cerrando sesión...")
                 break
             else:
@@ -176,7 +193,9 @@ class Application:
         except ValueError:
             print("ID no válido. Debe ser un número.")
         input("\nPresione Enter para volver...")
-        
+    
+#  ESPERANDO CRUD DE PRODUCTOS ---------
+
     def run(self):
         self.inicializar_bd()
         while True:
