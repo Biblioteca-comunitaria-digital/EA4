@@ -5,14 +5,21 @@ form.addEventListener("submit", function(event) {
 
     const Usuario = document.getElementById("Usuario").value;
     const contraseña = document.getElementById("contraseña").value;
+    const mensaje = document.getElementById("mensaje");
 
     const usuarioValido = "UsuarioEjemplo";
-    const contraseñaValida = "123456";
+    const contraseñaValida = "12345678";
 
     if (Usuario === usuarioValido && contraseña === contraseñaValida) {
+        mensaje.textContent = "✅ Inicio de sesión exitoso. Redirigiendo...";
+        mensaje.style.color = "green";
 
-        window.location.href = './index.html';
+        setTimeout(() => {
+        window.location.href = "./index.html";
+        }, 2000);
+    
     } else {
-
+        mensaje.textContent = "⚠️ Usuario o contraseña incorrectos. Intente nuevamente.";
+        mensaje.style.color = "red";
     }
 });
