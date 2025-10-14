@@ -8,7 +8,7 @@ form.addEventListener("submit", function(event) {
     const mensaje = document.getElementById("mensaje");
 
     const usuarioValido = "UsuarioEjemplo";
-    const contraseñaValida = "123456";
+    const contraseñaValida = "12345678";
 
     if (Usuario === usuarioValido && contraseña === contraseñaValida) {
         mensaje.textContent = "✅ Inicio de sesión exitoso. Redirigiendo...";
