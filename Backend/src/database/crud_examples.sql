@@ -38,3 +38,19 @@ WHERE id_usuario = 1;
 -- DELETE: Eliminar un usuario por su id
 DELETE FROM usuarios
 WHERE id_usuario = 1;
+
+
+-- CRUD DE PRODUCTOS
+-- CREATE
+SELECT id_usuario FROM usuarios WHERE id_usuario = %s AND id_rol = (SELECT id_rol FROM roles WHERE nombre_rol = 'admin'
+-- READ
+SELECT * FROM productos ORDER BY id_producto
+-- READ
+SELECT p.id_producto, p.nombre, p.descripcion, p.precio, u.nombre_usuario AS creador
+            FROM productos p
+            JOIN usuarios u ON p.id_usuario = u.id_usuario
+            ORDER BY p.id_producto
+-- UPDATE
+UPDATE productos SET nombre = %s, descripcion = %s, precio = %s WHERE id_producto = %s
+-- DELETE
+DELETE FROM productos WHERE id_producto = %s
