@@ -1,0 +1,117 @@
+/* css/style.css */
+/* Estilos base existentes */
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main, section.main-content {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+/* Mejoras de responsividad */
+.card iframe {
+  height: 200px;
+  width: 100%;
+}
+
+/* Contenedores de formulario mejorados */
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  .card iframe {
+    height: 150px;
+  }
+  
+  .btn-outline-primary {
+    margin-bottom: 5px;
+  }
+  
+  .form-container {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .card iframe {
+    height: 120px;
+  }
+  
+  .form-control.w-50 {
+    width: 100% !important;
+  }
+  
+  .d-flex.flex-wrap.justify-content-center.gap-2 {
+    gap: 5px !important;
+  }
+  
+  .btn-outline-primary {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+  
+  .form-card {
+    margin: 0.5rem;
+    padding: 1rem !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .card iframe {
+    height: 100px;
+  }
+  
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  
+  .btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
+
+/* Para vista horizontal en móviles */
+@media (max-height: 500px) and (orientation: landscape) {
+  .form-container {
+    padding: 1rem 0;
+  }
+}
+
+/* Asegurar que las tarjetas mantengan proporción */
+.card-img-top {
+  object-fit: cover;
+}
+
+/* Mejorar la legibilidad en móviles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  .lead {
+    font-size: 1rem;
+  }
+}
